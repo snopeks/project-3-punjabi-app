@@ -13,8 +13,13 @@
       <div class="nav-wrapper container">
         <a href="/" class="brand-logo">Sikho Punjabi</a>
         <ul class="right">
-          <li>Signup</li>
-          <li>Login</li>
+          <% if current_user %>
+            <li><%= link_to "Your Profile", user_path %></li>
+            <li><%= link_to "Log Out", logout_path %></li>
+          <% else %>
+            <li><%= link_to "Sign Up", new_user_path %></li>
+            <li><%= link_to "Login", login_path %></li>
+          <% end %>
         </ul>
       </div>
     </nav>
