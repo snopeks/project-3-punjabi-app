@@ -4,6 +4,38 @@ $primary-color: color("indigo", "lighten-2") !default;
 @import "materialize";
 
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import url(//fonts.googleapis.com/earlyaccess/notosansgurmukhi.css);
+
+#main-nav{
+
+  line-height: 56px;
+  .brand-logo{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .punjabi{
+
+  }
+  ul{
+    float:right;
+  }
+  @media screen and (max-width: 650px){
+    height: auto;
+    .brand-logo{
+      position: static;
+      transform: translatex(0);
+    }
+    .punjabi{
+      display: block;;
+    }
+    ul{
+      float: none;
+      li{
+        float: none;
+      }
+    }
+  }
+}
 
 #welcome{
    background: url(<%= asset_path 'golden-temple.jpg' %>) no-repeat;
@@ -63,7 +95,11 @@ $primary-color: color("indigo", "lighten-2") !default;
      font-size: 1.2em;
    }
  }
+.punjabi {
+  font-family: "Noto Sans", "Noto Sans Gurmukhi", sans-serif;
+  font-size: 2em;
 
+}
 .page-footer{
   h5{
     font-size: 1.2em;
