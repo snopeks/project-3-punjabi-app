@@ -1,0 +1,62 @@
+@import "materialize/components/color";
+$primary-color: color("indigo", "lighten-2") !default;
+// $secondary-color: color("green", "base") !default;
+@import "materialize";
+
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+#welcome{
+   background: url(<%= asset_path 'home_cover.jpg' %>) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 300px;
+   position: relative;
+   &:before{
+     content: '';
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+   }
+   .container{
+     height: 300px;
+     position: relative;
+     z-index: 10;
+     color: #fff;
+     div{
+       position: absolute;
+       bottom: 40px;
+       left: 40px;
+       width: 50%;
+       h3{
+         text-transform: uppercase;
+         font-size: 2.5em;
+       }
+       p{
+         font-size: 1.5em;
+       }
+     }
+   }
+ }
+.container{
+  padding: 10px;
+  li {
+    padding-right: 10px;
+  }
+   p{
+     @extend .indigo-text, .darken-4;
+     margin: 0px;
+     font-size: 1.2em;
+   }
+}
+
+ #plans{
+   background-color: orange;
+   p {
+     @extend .purple-text, .darken-3;
+   }
+ }
+
