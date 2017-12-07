@@ -1,0 +1,39 @@
+<div>
+  <p>This is the edit page</p>
+</div>
+
+<section id="profile-edit" class="container">
+  <h1>Edit profile</h1>
+  <%=link_to "Delete Profile", delete_user_path(current_user), method: :delete, class: "btn btn-small"%>
+  <br>
+  <div class="row">
+    <%= form_with class: 'col s12', scope: :user, url: update_user_path(@user), method: :put do |form| %>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <%= form.text_field :first_name,id: "first_name",class: "validate", placeholder: "First Name", required: true %>
+          <% form.label :first_name %>
+        </div>
+        <div class="input-field col s6">
+          <%= form.text_field :last_name,id: "last_name",class: "validate", placeholder: "Last Name" , required: true %>
+          <% form.label :last_name %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= form.text_field :email,id: "email",class: "validate", placeholder: "Email", required: true  %>
+          <% form.label :email %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= form.password_field :password,id: "pass",class: "validate", placeholder: "Password"  %>
+          <% form.label :password %>
+        </div>
+      </div>
+      <%= form.submit "Update",  class: "btn waves-effect waves-light btn-large" %>
+      <%= form.submit "Cancel", class: "btn waves-effect waves-light btn-large", url: "/profile" %>
+    <% end%>
+
+  </div>
+</section>
