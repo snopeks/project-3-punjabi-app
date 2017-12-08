@@ -15,7 +15,8 @@
         <a href="/" class="punjabi">ਸਿੱਖੋ ਪੰਜਾਬਿ</a>
         <ul>
           <% if current_user %>
-            <li><%= link_to "Your Profile", user_path %></li>
+            <li><%= link_to "Modules", modules_path %></li>
+            <li><%= link_to "My Profile", user_path %></li>
             <li><%= link_to "Log Out", logout_path %></li>
           <% else %>
             <li><%= link_to "Sign Up", new_user_path %></li>
@@ -34,6 +35,16 @@
     </div>
     <% end %>
     <%= yield %>
+    <% if current_user %>
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+        Sikho Punjabi © 2017
+        <a class="grey-text text-lighten-4 right" href="https://github.com/snopeks">Created by Stephanie Snopek</a>
+        </div>
+      </div>
+    </footer>
+    <% else %>
     <footer class="page-footer">
         <div class="container">
           <div class="row">
@@ -57,5 +68,6 @@
           </div>
         </div>
       </footer>
+    <% end %>
   </body>
 </html>
