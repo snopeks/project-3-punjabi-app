@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  validates :password, presence: true, length: {minimum: 8}
+  validates :password, presence: true, length: {minimum: 8}, on: :create
 	validates :username, presence: true, uniqueness: true
   has_secure_password
   has_many :units, dependent: :destroy

@@ -28,8 +28,13 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find_by_id(params[:id])
-    @user.update(user_params)
-    redirect_to user_path
+    if @user.update(user_params_no_pass)
+      flash[:notice] = "Successfully updated profile details"
+      redirect_to user_path
+    else
+      flash[:error] = @user.errors.full_messages.join('')
+      redirect_to edit_user_path
+    end
   end
 
   def destroy
@@ -39,7 +44,10 @@ class UsersController < ApplicationController
   end
 
   private
-  def user_params
+  def user_params_with_password
     params.require(:user).permit(:first_name, :last_name, :email, :password, :username, :age)
+  end
+  def user_params_no_pass
+    params.require(:user).permit(:first_name, :last_name, :email, :age)
   end
 end
