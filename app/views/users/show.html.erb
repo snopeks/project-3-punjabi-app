@@ -1,10 +1,18 @@
-<section id="profile-info">
-  <div class="container" id="profile-header">
-    <h1>Hello, <%= @user.first_name %>!</h1>
-    <%= link_to "Edit Profile", edit_user_path(current_user), class: 'btn'%>
-  </div>
-  <div>
-    <%= render "reportcard" %>
-  </div>
-  <%= render "purchase" %>
-</section>
+<div id="profile-info">
+  <section id="profile-header">
+    <div class="container">
+      <h1>Hello, <%= @user.first_name %>!</h1>
+      <%= link_to "Edit Profile", edit_user_path(current_user), class: 'btn'%>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <%= render "reportcard" %>
+    </div>
+  </section>
+  <section id="purchase-body">
+    <div class="container">
+      <%= render "purchase" %>
+    </div>
+  </section>
+</div>
