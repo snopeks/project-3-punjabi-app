@@ -36,12 +36,21 @@ $primary-color: color("indigo", "lighten-2") !default;
     }
   }
 }
+
 #profile-header{
-  background-color: #9fa8da;
+  background-color: #c5cae9;
   width: 100%;
   text-align: center;
+  padding: 20px;
+  h1{
+    margin: 0;
+  }
+  a.btn{
+    margin:10px;
+  }
 }
 #reportcard {
+  padding:10px;
   border: 2px dashed black;
   left: 50%;
 }
@@ -52,13 +61,14 @@ $primary-color: color("indigo", "lighten-2") !default;
   padding: 5px;
 }
 
-.purchase-header{
+#purchase-header{
   text-align: center;
 }
-.purchase-body{
+
+#purchase-body{
   padding: 20px;
   margin-bottom: 0;
-  background-color: #e8eaf6;
+  background-color: #c5cae9;
 }
 #purchase-btn{
   text-align: center;
@@ -101,7 +111,6 @@ $primary-color: color("indigo", "lighten-2") !default;
    }
  }
 .container{
-  padding: 10px;
   li {
     padding-right: 10px;
   }
@@ -111,7 +120,27 @@ $primary-color: color("indigo", "lighten-2") !default;
      font-size: 1.2em;
    }
 }
+#modules{
+  p{
+  text-align: center;
+  height: 200px;
 
+  }
+  .beginner{
+    border-radius:  50px;
+    display:inline-block;
+    background-color: #ff9800;
+
+  }
+  .intermediate{
+    border-radius: 50px;
+    background-color:#ffcc80;
+  }
+  .advanced{
+    border-radius:50px;
+    background-color:#7986cb;
+  }
+}
 .btn{
   @extend .orange
 }
