@@ -6,6 +6,9 @@ $primary-color: color("indigo", "lighten-2") !default;
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import url(//fonts.googleapis.com/earlyaccess/notosansgurmukhi.css);
 
+body{
+  background-color: #c5cae9;
+}
 #main-nav{
 
   line-height: 56px;
@@ -37,42 +40,6 @@ $primary-color: color("indigo", "lighten-2") !default;
   }
 }
 
-#profile-header{
-  background-color: #c5cae9;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  h1{
-    margin: 0;
-  }
-  a.btn{
-    margin:10px;
-  }
-}
-#reportcard {
-  padding:10px;
-  border: 2px dashed black;
-  left: 50%;
-}
-
-.report-header{
-  text-align: center;
-  border: 2px solid black;
-  padding: 5px;
-}
-
-#purchase-header{
-  text-align: center;
-}
-
-#purchase-body{
-  padding: 20px;
-  margin-bottom: 0;
-  background-color: #c5cae9;
-}
-#purchase-btn{
-  text-align: center;
-}
 
 #welcome{
    background: url(<%= asset_path 'golden-temple.jpg' %>) no-repeat;
@@ -95,6 +62,7 @@ $primary-color: color("indigo", "lighten-2") !default;
      position: relative;
      z-index: 10;
      color: #fff;
+
      div{
        position: absolute;
        bottom: 40px;
@@ -104,41 +72,109 @@ $primary-color: color("indigo", "lighten-2") !default;
          text-transform: uppercase;
          font-size: 3em;
        }
-       p{
-         font-size: 1.5em;
-       }
      }
    }
  }
-.container{
-  li {
-    padding-right: 10px;
-  }
+ #about{
+   background-color: white;
+   padding: 20px;
    p{
      @extend .indigo-text, .darken-4;
+     font-size: 1.2em;
+   }
+ }
+.container{
+   p{
+
      margin: 0px;
      font-size: 1.2em;
    }
+   .row{
+     margin-bottom:0px;
+   }
+}
+#signup{
+  background-color:white;
+  padding: 10px;
+}
+#login{
+  background-color: white;
+  padding: 10px;
+}
+#profile-header{
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  h1{
+    margin: 0;
+  }
+  a.btn{
+    margin:10px;
+  }
+}
+#reportcard {
+  background-color: white;
+  padding:10px;
+  border: 2px dashed black;
+  left: 50%;
+}
+
+.report-header{
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#purchase-header{
+  text-align: center;
+}
+
+#purchase-body{
+  padding: 20px;
+  margin-bottom: 0;
+  background-color: white;
+}
+#purchase-btn{
+  text-align: center;
+}
+
+#modules-header{
+  background-color: white;
+  padding: 10px;
+  text-align: center;
 }
 #modules{
+  background-color: white;
+  div{
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
+  .row{
+    margin-bottom:0px;
+  }
   p{
+  display: block;
   text-align: center;
   height: 200px;
-
   }
+
   .beginner{
-    border-radius:  50px;
-    display:inline-block;
+    // border-radius:  50px;
+    // display:inline-block;
     background-color: #ff9800;
+    // margin-bottom: 20px;
 
   }
   .intermediate{
-    border-radius: 50px;
+    // border-radius: 50px;
     background-color:#ffcc80;
+    // margin-bottom: 20px;
   }
   .advanced{
-    border-radius:50px;
-    background-color:#7986cb;
+    // border-radius:50px;
+    background-color: #ff9800;
+    // margin-bottom: 20px;
   }
 }
 .btn{
