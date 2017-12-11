@@ -4,6 +4,8 @@ class UnitsController < ApplicationController
   end
 
   def show
+    @user = User.find(session[:user_id])
+    @units = @user.units
     @unit = Unit.find(params[:id])
   end
 
