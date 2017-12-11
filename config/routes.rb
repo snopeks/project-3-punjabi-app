@@ -2,8 +2,11 @@ Rails.application.routes.draw do
 
   root 'statics#index'
 
-  get '/modules', to: "units#index", as: "modules"
-  get '/modules/:id', to: "units#show"
+  get '/modules', to: "units#index", as: "units"
+  get '/modules/:id', to: "units#show", as: "show_unit"
+
+  get '/modules/:id/lessons', to: "lessons#index", as: "lessons"
+  get '/modules/:id/lessons/:id', to: "lessons#show", as: "show_lesson"
 
   get '/login', to: "sessions#new"
   post '/sessions', to: "sessions#create"

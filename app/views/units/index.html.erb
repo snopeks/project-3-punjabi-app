@@ -1,44 +1,48 @@
 <div class="container">
   <section id="modules-header">
-  <div >
-    <p>Hi <%= current_user.first_name%></p>
-    <p>You have <%= current_user.units.length %> modules! </p>
-  </div>
-</section>
-<section id="modules">
-  <div class="row">
-    <div class="col s4 offset-s1 m4 offset-m1 beginner">
-      <p>Beginner2</p>
+      <div class="row">
+        <div class="col s12">
+          <p>Hi <%= current_user.first_name%></p>
+          <p>You have <%= @units.length %> modules! </p>
+        </div>
+      </div>
+  </section>
+  <section id="modules">
+    <div class="row">
+      <div class="card col s4 push-s1 m4 push-m1">
+        <p><%= @units[0].title%> </p>
+        <%= link_to "Lessons", show_unit_path(@units[0].id)%>
+      </div>
+      <div class="card col s4 offset-s3 m4 offset-m3">
+        <p>Vocabulary 1</p>
+        <a href="#">Beginner2</a>
+      </div>
+      <div class="card col s4 offset-s4 m4 offset-m4">
+        <p>Beginner3</p>
+      </div>
     </div>
-    <div class="col s4 push-s2 m4 push-m2 beginner">
-      <p>Beginner3</p>
+    <div class="row">
+      <div class="card col s4 push-s1 m4 push-m1">
+        <p>Intermediate1</p>
+      </div>
+      <div class="card col s4 offset-s3 m4 offset-m3">
+        <p>Intermediate2</p>
+      </div>
+      <div class="card col s4 offset-s4 m4 offset-m4">
+        <p>Intermediate3</p>
+      </div>
     </div>
-    <div class="col s4 offset-s4 m4 offset-m4 beginner">
-      <p>Beginner1</p>
+    <div class="row">
+      <div class="card col s4 push-s1 m4 offset-m1">
+        <p>Advanced1</p>
+      </div>
+      <div class="card col s4 offset-s3 m4 push-m2">
+        <p>Advanced2</p>
+      </div>
+      <div class="card col s4 offset-s4 m4 offset-m4">
+        <p>Advanced3</p>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col s4 push-s1 m4 push-m1 intermediate">
-      <p>Intermediate1</p>
-    </div>
-    <div class="col s4 offset-s3 m4 offset-m3 intermediate">
-      <p>Intermediate2</p>
-    </div>
-    <div class="col s4 offset-s4 m4 offset-m4 intermediate">
-      <p>Intermediate3</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s4 push-s1 m4 offset-m1 advanced">
-      <p>Advanced1</p>
-    </div>
-    <div class="col s4 offset-s3 m4 push-m2 advanced">
-      <p>Advanced2</p>
-    </div>
-    <div class="col s4 offset-s4 m4 offset-m4 advanced">
-      <p>Advanced3</p>
-    </div>
-  </div>
-</section>
+  </section>
 </div>
 
