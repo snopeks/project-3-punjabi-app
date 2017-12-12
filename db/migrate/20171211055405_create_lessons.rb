@@ -6,6 +6,7 @@ class CreateLessons < ActiveRecord::Migration[5.1]
       t.string :english
       t.string :phonetic
       t.string :example
+      t.string :translation
       t.belongs_to :unit, foreign_key: true
 
       t.timestamps

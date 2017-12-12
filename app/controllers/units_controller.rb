@@ -1,12 +1,17 @@
 class UnitsController < ApplicationController
   def index
-    @units = Unit.all
+    @user = current_user
+    @units = @user.units
   end
 
   def show
-    @user = User.find(session[:user_id])
+    @user = current_user
     @units = @user.units
     @unit = Unit.find(params[:id])
+    @lessons = @unit.lessons
   end
-
+  # def lessons_index
+  #   @unit = Unit.find(params[:id])
+  #   @lessons = @unit.lessons
+  # end
 end

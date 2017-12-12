@@ -1,16 +1,24 @@
 <div class="container">
   <div class="row">
-    <div class="col s2">
       <% @lessons.each do |lesson| %>
-        <div class="card">
+        <div class="col xs12 s12 m4">
+        <div class="card medium">
           <div class="card-content">
-            <span class="card-title"><%= lesson.punjabi%> </span>
+            <span class="card-title activator punjabi"><%= lesson.punjabi%><i class="material-icons right">more_vert</i></span>
           </div>
-          <div class="card-action">
-            <%= link_to "practice", show_lesson_path(lesson.id) %>
+          <div class="card-reveal">
+            <span class="card-title punjabi"><%= lesson.punjabi %> <i class="material-icons right">close</i></span>
+            <label>English</label>
+            <p><%= lesson.english%> </p>
+            <label>Phonetics</label>
+            <p><%= lesson.phonetic%> </p>
+            <label>Example</label>
+            <p class="punjabi"><%= lesson.example%> </p>
+            <label>Translation</label>
+            <p><%= lesson.translation%> </p>
           </div>
         </div>
+      </div>
       <% end %>
-    </div>
   </div>
 </div>
