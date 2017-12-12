@@ -1,17 +1,18 @@
 <div class="container">
   <div class="row">
-    <div class="col s12 m6 offset-m3">
+    <div class="col s12">
       <h3>Lesson Plan</h3>
     </div>
-    <div class="col s12 m6 offset-m3">
-      <div class="card indigo lighten-2">
-        <div class="card-content white-text">
+    <div class="col s12">
+      <div class="card white">
+        <div class="card-content black-text">
           <span class="card-title"><%= @unit.title%> </span>
           <p><%= @unit.description %> </p>
         </div>
         <div class="card-action">
-          <%= link_to "Study", lessons_path%>
+          <%= link_to "Study", lessons_path(@unit.id)%>
           <a href="#">Quiz</a>
+          <a href="#">Stats</a>
         </div>
       </div>
     </div>

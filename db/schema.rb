@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20171211055405) do
     t.string "english"
     t.string "phonetic"
     t.string "example"
+    t.string "translation"
     t.bigint "unit_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

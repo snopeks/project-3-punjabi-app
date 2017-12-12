@@ -1,11 +1,18 @@
-<div class="container">
+<div class="container lesson">
   <div class="row">
-    <div class="col s12">
+    <div class="col s8 offset-s2 m6 offset-m3">
     <div class="card small">
-      <span class="card-title"><%= @lesson.punjabi%> </span>
-      <p><%= @lesson.english%> </p>
-      <p><%= @lesson.phonetic%> </p>
-      <p><%= @lesson.example%> </p>
+      <div class="card-content">
+      <span class="card-title punjabi">Letter: <%= @lesson.punjabi%> </span>
+        <label>English</label>
+        <p><%= @lesson.english%> </p>
+        <label>Phonetics</label>
+        <p><%= @lesson.phonetic%> </p>
+        <label>Example</label>
+        <p class="punjabi"><%= @lesson.example%> </p>
+        <label>Translation</label>
+        <p><%= @lesson.translation%> </p>
+      </div>
     </div>
   </div>
 </div>
