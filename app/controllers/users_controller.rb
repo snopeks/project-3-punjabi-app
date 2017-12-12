@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
   def create
-    @user = User.new(user_params)
+    @user = User.new(user_params_with_password)
     if @user.save
       login(@user)
       redirect_to user_path
