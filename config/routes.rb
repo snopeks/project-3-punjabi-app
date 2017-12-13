@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get '/modules/:id/lessons', to: "lessons#index", as: "lessons"
   get '/modules/:unit_id/lessons/:lesson_id', to: "lessons#show", as: "show_lesson"
+  get '/modules/:id/quiz', to: "units#quiz", as: "quiz"
 
   get '/login', to: "sessions#new"
   post '/sessions', to: "sessions#create"
