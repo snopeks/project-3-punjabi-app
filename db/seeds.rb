@@ -44,7 +44,7 @@ alphabet_seed_data = [
     english:"ooraa",
     phonetic:"-",
     example:"ੳੂਠ",
-    translation: "Camel"
+    translation: "Camel (Ooth)"
   },
   {
     category:"alphabet",
@@ -52,7 +52,7 @@ alphabet_seed_data = [
     english:"airaa",
     phonetic:"ah",
     example: "ਅਨਾਰ",
-    translation: "Pomegranate"
+    translation: "Pomegranate (Anaar)"
   },
   {
     category:"Alphabet",
@@ -60,7 +60,7 @@ alphabet_seed_data = [
     english:"eeree",
     phonetic:"-",
     example:"ਿੲਲ",
-    translation:"Eagle"
+    translation:"Eagle (Eel)"
   },
   {
     category:"Alphabet",
@@ -68,7 +68,7 @@ alphabet_seed_data = [
     english:"sasa",
     phonetic:"s",
     example:"ਸੇਬ",
-    translation:"Apple"
+    translation:"Apple (Seb)"
   },
   {
     category:"Alphabet",
@@ -76,7 +76,7 @@ alphabet_seed_data = [
     english:"haha",
     phonetic:"h",
     example:"ਹਾਥੀ",
-    translation: "Elephant"
+    translation: "Elephant (Haathi)"
   },
   {
     category:"Alphabet",
@@ -84,7 +84,7 @@ alphabet_seed_data = [
     english:"kaka",
     phonetic:"k",
     example:"ਕਬੂਤਰ",
-    translation: "Pigeon"
+    translation: "Pigeon (Kabutar)"
   },
   {
     category:"Alphabet",
@@ -92,7 +92,7 @@ alphabet_seed_data = [
     english:"khakha",
     phonetic:"kh",
     example:"ਖੀਰਾ",
-    translation:"Cucumber"
+    translation:"Cucumber (Kheera)"
   },
   {
     category:"Alphabet",
@@ -100,15 +100,15 @@ alphabet_seed_data = [
     english:"gaga",
     phonetic:"g",
     example:"ਗੁਲਦਾਨ",
-    translation:"Flowerpot"
+    translation:"Flowerpot (Guldaan)"
   },
   {
     category:"Alphabet",
     punjabi:"ਘ",
     english:"ghagha",
     phonetic:"gh",
-    example:"ਗਰ",
-    translation:"Home"
+    example:"ਘਰ",
+    translation:"Home (Ghar)"
   },
   {
     category:"Alphabet",
@@ -124,7 +124,7 @@ alphabet_seed_data = [
     english:"chacha",
     phonetic:"ch",
     example:"ਚੋਰ",
-    translation:"Thief"
+    translation:"Thief (Chor)"
   },
   {
     category:"Alphabet",
@@ -132,7 +132,7 @@ alphabet_seed_data = [
     english:"chhachha",
     phonetic:"chh",
     example:"ਛਤਰੀ",
-    translation:"Umbrella"
+    translation:"Umbrella (Chhataree)"
   },
   {
     category:"Alphabet",
@@ -140,7 +140,7 @@ alphabet_seed_data = [
     english:"jaja",
     phonetic:"j",
     example:"ਜਹਾਜ",
-    translation:"Ship"
+    translation:"Ship (Jahaaj)"
   },
   {
     category:"Alphabet",
@@ -148,7 +148,7 @@ alphabet_seed_data = [
     english:"jhajha",
     phonetic:"jh",
     example:"ਝੰਡਾ",
-    translation:"Flag"
+    translation:"Flag (Jhandaa)"
   },
   {
     category:"Alphabet",
@@ -164,7 +164,7 @@ alphabet_seed_data = [
     english:"tainka",
     phonetic:"t",
     example:"ਟਮਾਟਰ",
-    translation:"Tomato"
+    translation:"Tomato (Tamaatar)"
   },
   {
     category:"Alphabet",
@@ -172,7 +172,7 @@ alphabet_seed_data = [
     english:"thatha",
     phonetic:"th",
     example:"ਠੰਢਾ",
-    translation:"Cold drink"
+    translation:"Cold drink (Thandhaa)"
   },
   {
     category:"Alphabet",
@@ -180,7 +180,7 @@ alphabet_seed_data = [
     english:"dada",
     phonetic:"d",
     example:"ਡੱਡੂ",
-    translation:"Frog"
+    translation:"Frog (Dadoo)"
   },
   {
     category:"Alphabet",
@@ -188,7 +188,7 @@ alphabet_seed_data = [
     english:"dhadha",
     phonetic:"dh",
     example:"ਢੋਲ",
-    translation:"Drum"
+    translation:"Drum (Dhol)"
   },
   {
     category:"Alphabet",
@@ -204,7 +204,7 @@ alphabet_seed_data = [
     english:"tata",
     phonetic:"t",
     example:"ਤਿਤਲੀ",
-    translation:"Butterfly"
+    translation:"Butterfly (Titalee)"
   },
   {
     category:"Alphabet",
@@ -212,7 +212,7 @@ alphabet_seed_data = [
     english:"thatha",
     phonetic:"th",
     example:"ਥਰਮਸ",
-    translation:"Thermos"
+    translation:"Thermos (Tharmas)"
   },
   {
     category:"Alphabet",
@@ -220,7 +220,7 @@ alphabet_seed_data = [
     english:"dada",
     phonetic:"d",
     example:"ਦਵਾਤ",
-    translation:"Ink pot"
+    translation:"Ink pot (Davat)"
   },
   {
     category:"Alphabet",
@@ -228,7 +228,7 @@ alphabet_seed_data = [
     english:"dhadha",
     phonetic:"dh",
     example:"ਧਨੁਸ਼",
-    translation:"Bow (for shooting arrows)"
+    translation:"Bow (Dhanush)"
   },
   {
     category:"Alphabet",
@@ -236,7 +236,7 @@ alphabet_seed_data = [
     english:"nana",
     phonetic:"n",
     example:"ਨਲਕਾ",
-    translation:"Faucet"
+    translation:"Faucet (Nalaka)"
   },
   {
     category:"Alphabet",
@@ -244,7 +244,7 @@ alphabet_seed_data = [
     english:"papa",
     phonetic:"p",
     example:"ਪਤੰਗ",
-    translation:"Kite"
+    translation:"Kite (Patang)"
   },
   {
     category:"Alphabet",
@@ -252,7 +252,7 @@ alphabet_seed_data = [
     english:"phapha",
     phonetic:"ph",
     example:"ਫਲ",
-    translation:"Fruit"
+    translation:"Fruit (Phal)"
   },
   {
     category:"Alphabet",
@@ -260,7 +260,7 @@ alphabet_seed_data = [
     english:"baba",
     phonetic:"b",
     example:"ਬਿੱਲੀ",
-    translation:"Cat"
+    translation:"Cat (Bilee)"
   },
   {
     category:"Alphabet",
@@ -268,7 +268,7 @@ alphabet_seed_data = [
     english:"bhabha",
     phonetic:"bh",
     example:"ਭਾਲੂ",
-    translation:"Bear"
+    translation:"Bear (Bhaloo)"
   },
   {
     category:"Alphabet",
@@ -276,7 +276,7 @@ alphabet_seed_data = [
     english:"mama",
     phonetic:"m",
     example:"ਮੱਛੀ",
-    translation:"Fish"
+    translation:"Fish (Machhee)"
   },
   {
     category:"Alphabet",
@@ -284,7 +284,7 @@ alphabet_seed_data = [
     english:"yeye",
     phonetic:"y",
     example:"ਯੋਗੀ",
-    translation:"Yogi"
+    translation:"Yogi (Yogi)"
   },
   {
     category:"Alphabet",
@@ -292,7 +292,7 @@ alphabet_seed_data = [
     english:"rara",
     phonetic:"r",
     example:"ਰੱਸਾ",
-    translation:"Rope"
+    translation:"Rope (Rasaa)"
   },
   {
     category:"Alphabet",
@@ -300,7 +300,7 @@ alphabet_seed_data = [
     english:"lala",
     phonetic:"l",
     example:"ਲੂੰਬੜੀ",
-    translation:"Fox"
+    translation:"Fox (Lumbaree)"
   },
   {
     category:"Alphabet",
@@ -308,7 +308,7 @@ alphabet_seed_data = [
     english:"vava",
     phonetic:"v or w",
     example:"ਵਨ",
-    translation:"Forest"
+    translation:"Forest (Van)"
   },
   {
     category:"Alphabet",
@@ -324,7 +324,7 @@ alphabet_seed_data = [
     english:"shasha",
     phonetic: "sh",
     example: "ਸ਼ੇਰ",
-    translation:"Lion"
+    translation:"Lion (Sher)"
   },
   {
     category:"Alphabet",
@@ -332,7 +332,7 @@ alphabet_seed_data = [
     english:"hka",
     phonetic:"kh",
     example:"ਖ਼ਰਗੋਸ਼",
-    translation:"Rabbit"
+    translation:"Rabbit (Khargosh)"
   },
   {
     category:"Alphabet",
@@ -340,7 +340,7 @@ alphabet_seed_data = [
     english:"hga",
     phonetic:"gh",
     example:"ਗ਼ੁਬਾਰਾ",
-    translation:"Balloon"
+    translation:"Balloon (Gubaaraa)"
   },
   {
     category:"Alphabet",
@@ -348,7 +348,7 @@ alphabet_seed_data = [
     english:"za",
     phonetic: "z",
     example:"ਜ਼ੈਬਰਾ",
-    translation:"Zebra"
+    translation:"Zebra (Zebra)"
   },
   {
     category:"Alphabet",
@@ -356,7 +356,7 @@ alphabet_seed_data = [
     english:"fa",
     phonetic: "f",
     example:"ਫ਼ਰਾਕ",
-    translation:"frock"
+    translation:"frock (Frock)"
   }
 
 ]
