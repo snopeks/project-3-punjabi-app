@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'statics#index'
   get '/team', to:"statics#team", as: "team"
+  get '/about', to: "statics#about", as: "about"
   get '/modules', to: "units#index", as: "units"
   get '/modules/:id', to: "units#show", as: "show_unit"
 
