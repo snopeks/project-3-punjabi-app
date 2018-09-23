@@ -10,15 +10,15 @@ Do you have an interest in learning interesting and widely-spoken languages? Do 
 
 - Ruby on Rails
 - Javascript, jquery
-- SCSS, HTML
+- SCSS
 - PostgreSQL
 
 ## Installation
 
-- git clone this repo
-- bundle install to get your required gems
-- db:create, db:migrate and db:seed to set up database
-- rails/rake s to serve the app on localhost
+- `git clone` this repo
+- `bundle install` to get your required gems
+- `db:create`, `db:migrate` and `db:seed` to set up database
+- `rails/rake s` to serve the app on localhost
 
 ## User stories
 
@@ -27,9 +27,10 @@ Do you have an interest in learning interesting and widely-spoken languages? Do 
  2. see login and signup buttons & links
 
 #### Logged in user will...
- 1. #### have a profile page
+ 1. #### Have a profile page
     * view and edit user details
     * dashboard with "report card" containing progress data (modules completed 2/5, overall lesson completion %)
+        * dashboard is currently a mock, not yet implemented. 
 
  2. ##### Have a unit page
     * view all <b>units</b> (e.g. Beginner, Intermediate, Advanced)
@@ -38,38 +39,26 @@ Do you have an interest in learning interesting and widely-spoken languages? Do 
     * see all the <b>lessons</b> (e.g. alphabet flashcards, vocab flashcards, vocab & alphabet quiz)
 
  4. ##### Click into lessons
-    * complete language drills (e.g. 10 alphabet flashcards)
-
-5. ##### Purchase new modules
-    * have paid modules with new units covering topics such as dating, travel, business etc...
-
+    * complete language practice (e.g. 10 alphabet flashcards)
 
 ## Wireframes
 
 In progress
 
-## ERDs
+## Entities
 
-<b>USER</b>
-- user_params
+- Users
+- Units
+    - has many lessons
+- Lessons
+    - owned by units
 
-<b>UNIT</b>
-- unit_params
-- :unit has_many :lessons
-
-<b>LESSON</b>
-- lesson_params
-- :is_owned_by :units
-
-## Future Features
+## Future Features & Goals
 
 - Toggle between teaching Punjabi to English-speakers, and teaching English to Punjabi-speakers
-
 - Pronounciation audio files
 - Engaging graphics and/or images
-
 - Google translate API for typing practice
-
 - Offer tutoring sessions and booking feature
-
 - Create and verify at least 50 Units of lessons.
+- Donation-based paid tier for users to buy more advanced lessons 
