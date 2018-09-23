@@ -11,7 +11,7 @@ body{
 }
 #main-nav{
 
-  line-height: 56px;
+  line-height: 64px;
   .brand-logo{
     left: 50%;
     transform: translateX(-50%);
@@ -86,15 +86,20 @@ body{
      padding:10px;
    }
  }
-
- .team{
+ .team-photo{
    border: 2px solid black;
+   border-radius: 50%;
+   float: left;
+   margin: 0 10px 10px 0;
  }
-.container{
-   p{
-     font-size: 1.2em;
-   }
+ #team-header{
+   text-align: left;
+ }
+ .team-info{
+    font-size: 15px;
+    text-align: left;
 }
+
 #signup{
   background-color:white;
   padding: 10px;
@@ -163,6 +168,7 @@ body{
 }
  #plans{
    background-color: orange;
+   padding: 20px;
    p {
      @extend .indigo-text, .darken-3;
      font-size: 1.5em;
@@ -170,6 +176,9 @@ body{
    li{
      font-size: 1.2em;
    }
+ }
+ #footer-content{
+   padding: 0 20px;
  }
 .punjabi {
   font-family: "Noto Sans", "Noto Sans Gurmukhi", sans-serif;
